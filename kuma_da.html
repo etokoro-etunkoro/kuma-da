@@ -2,9 +2,18 @@
 <html lang="ja">
 <head>
     <title>熊打</title>
+     <style>
+        body { font-family: sans-serif; text-align: center; padding: 30px; }
+        #target { font-size: 24px; margin: 20px; }
+        input { font-size: 20px; width: 80%; padding: 5px; }
+        #timer, #score { margin: 10px; font-size: 18px; }
+    </style>
 </head>
 <body>
     <h2>熊打</h2>
+    <div id="target"></div>
+    <div id="timer">残り時間：30秒</div>
+    <div id="score">スコア：0</div>
     <div id="tehon">
         <h3>お手本</h3>
         <h4>これより、寮生大会を開始する。まず、議長団の選出を行う。立候補する者は挙手を。</h4>
@@ -17,9 +26,9 @@
         <h3>あなた</h3>
         <pre id="user-area"></pre>
     </div>
-
+    <input type="text" id="input" autocomplete="off">
     <script src="start_kumada.js"></script>
-    <script src="judge_inputs.js"></script>
+   <!-- <script src="judge_inputs.js"></script>-->
 
 
 </body>

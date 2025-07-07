@@ -1,4 +1,7 @@
 from bottle import route, run, static_file
+@route('/<filename>')
+def serve_static(filename):
+    return static_file(filename, root='.')
 
 @route('/')
 def index():
